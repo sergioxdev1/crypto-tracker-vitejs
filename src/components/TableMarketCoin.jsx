@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import useAxios from '../hooks/useAxios'
 import Coin from './Coin';
+import Pagination from './Pagination';
 
 const TableMarketCoin = () => {
     const { response } = useAxios('coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false');
@@ -34,6 +35,7 @@ const TableMarketCoin = () => {
                 </div>
             </div>
             {filteredCoin && filteredCoin.map(coin => <Coin key={coin.id} coin={coin} />)}
+            <Pagination />
         </section>
     )
 }
