@@ -5,8 +5,9 @@ import Pagination from './Pagination';
 
 const TableMarketCoin = () => {
     const { response } = useAxios('coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false');
+
     const [search, setSearch] = useState('');
-    console.log(search)
+
     let filteredCoin;
     if (response) {
         filteredCoin = response.filter((coin) => coin.name.toLowerCase().includes(search.toLowerCase()));
