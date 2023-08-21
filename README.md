@@ -1,4 +1,4 @@
-## Crypto Tracker Sumi
+## Crypto Tracker React/Vite
 Web application to consult different crypto coins and search by name or symbol.
 
 ## Version
