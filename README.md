@@ -2,7 +2,7 @@
 Web application to consult different crypto coins and search by name or symbol.
 
 ## Version
-V.0.0.1
+V.0.0.2
 
 ## Technologies used:
 * [ViteJS](vitejs.dev/):  a build tool that significantly improves the front-end development experience. 
